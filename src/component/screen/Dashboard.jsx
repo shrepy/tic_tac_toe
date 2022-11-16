@@ -49,11 +49,13 @@ const Dashboard = (propScreen) => {
     return(
         <>
         { screen === "" ? (<>
+            <div className='Box'>
             <h1>Dashboard</h1><hr />
             <h1>Tic Tac Toe</h1><hr style={{width:"20%", marginLeft:"40%"}}/>
             <div className='container'>
             <button onClick={()=>handleChange("single_player")} className='btn btn-warning'>Single Player</button><hr style={{width:"10%", marginLeft:"45%"}} />
             <Link onClick={()=>handleChange("multi_player")} className='btn btn-danger'>Multi Player</Link>
+            </div>
             </div>
             </>)
          : 
