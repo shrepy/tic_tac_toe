@@ -145,14 +145,15 @@ const Main = (userChoice,newData=[]) => {
 
     return(
         <>
-        <h1>Main Screen</h1>
+        <h1 className='Ingame'>Main Screen</h1>
         <div class="container-fluid">
                 <div className=' col-12 '>
                     <h3>Tic tac Toe</h3>
                 </div>
-                <div><Link onClick={resetGame} to='/' className='btn'>RESET GAME</Link></div>
-                <div style={{marginTop:"8%", marginLeft:"25%", marginRight:"25%",}} className='box row'>
-                    <div className='box_element col-sm border-1'>
+                    <h6 style={{marginTop:"10px"}}>{userChoice.Uchoice}</h6>
+                <div><Link onClick={resetGame} to='/' style={{marginTop:"0%",marginBottom:"-8%",border:"3px solid",color:"darkgreen"}} className='btn'>RESET GAME</Link></div>
+                <div style={{marginTop:"8%", marginLeft:"33%", marginRight:"25%",}} className='BoxElement row'>
+                    <div className='BoxRow col-sm border-1'>
                         <div className='element row-1'><button id="square1" name="1" className="square" onClick={checkMultiPlayer}>{arryOfString[0]}</button></div>
                         <div className='row-2 element'><button id="square1" name="4" className='square' onClick={checkMultiPlayer}>{arryOfString[3]}</button></div>
                         <div className='row-3 element'><button id="square1" name="7" className='square' onClick={checkMultiPlayer}>{arryOfString[6]}</button></div>
